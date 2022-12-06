@@ -4,8 +4,49 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jua&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="css/style.css" />
     <title>Dog Food Calculator</title>
   </head>
-  <body></body>
+  <body>
+    <div class="main">
+      <h1>강아지 하루 권장 사료 급여량</h1>
+
+      <input id="name" required maxlength="15" type="text" placeholder="이름" />
+      <input
+        id="kg"
+        required
+        maxlength="2"
+        type="text"
+        min="2"
+        max="40"
+        placeholder="몸무게(2kg~40kg)"
+      />
+      <select name="age" id="age">
+        <option value="" disabled selected>개월수</option>
+        <option value="4개월">4개월 미만</option>
+        <option value="5개월">5개월 ~ 성견</option>
+        <option value="비중성화">성견 - 비중성화</option>
+        <option value="중성화">성견 - 중성화</option>
+        <option value="과체중">성견 - 과체중</option>
+        <option value="비만">성견 - 비만</option>
+      </select>
+      <select name="count" id="count">
+        <option value="" disabled selected></option>
+        <option value="7주이전">생후 7주 이전</option>
+        <option value="16주이전">생후 7 ~ 16주</option>
+        <option value="28주이전">생후 17 ~ 28주</option>
+        <option value="29주이후">생후 29주 이후</option>
+      </select>
+      <button>입력 완료</button>
+    </div>
+
+    <script src="js/app.js"></script>
+  </body>
 </html>
