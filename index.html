@@ -50,17 +50,19 @@
 
         <input id="kcal" required type="text" placeholder="사료 1g당 kcal양" />
 
-        <select name="count" id="count">
+        <select name="amount" id="amount">
           <option value="" disabled selected></option>
-          <option value="7주이전">생후 7주 이전</option>
-          <option value="16주이전">생후 7 ~ 16주</option>
-          <option value="28주이전">생후 17 ~ 28주</option>
-          <option value="29주이후">생후 29주 이후</option>
+          <option value="5">생후 7주 이전</option>
+          <option value="4">생후 7 ~ 16주</option>
+          <option value="3">생후 17 ~ 28주</option>
+          <option value="2">생후 29주 이후</option>
         </select>
 
         <input id="submit" type="submit" value="입력완료" />
       </div>
-      <div id="result"></div>
+      <div id="result">
+        <span id="txt"></span>
+      </div>
     </div>
     <script src="js/app.js"></script>
   </body>
