@@ -39,3 +39,10 @@ select {
   height: 50px;
   box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
 }
+
+#result {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 23px;
+}

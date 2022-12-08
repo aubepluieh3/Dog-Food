@@ -20,7 +20,7 @@
         <span>🐶강아지🐶</span>
         <span>하루 권장 사료 급여량</span>
       </div>
-      <div class="main">
+      <form class="main">
         <input
           id="name"
           required
@@ -31,7 +31,7 @@
         <input
           id="kg"
           required
-          maxlength="2"
+          maxlength="4"
           type="text"
           min="2"
           max="40"
@@ -39,7 +39,7 @@
         />
 
         <select name="age" id="age" onchange="ageBoxChange()">
-          <option value="" disabled selected>개월수</option>
+          <option value="" disabled selected>나이</option>
           <option value="3">4개월 미만</option>
           <option value="2">5개월 ~ 성견</option>
           <option value="1.8">성견 - 비중성화</option>
@@ -50,18 +50,18 @@
 
         <input id="kcal" required type="text" placeholder="사료 1g당 kcal양" />
 
-        <select name="amount" id="amount">
-          <option value="" disabled selected></option>
+        <select name="count" id="count">
+          <option value="" disabled selected>생후</option>
           <option value="5">생후 7주 이전</option>
           <option value="4">생후 7 ~ 16주</option>
           <option value="3">생후 17 ~ 28주</option>
           <option value="2">생후 29주 이후</option>
         </select>
-
         <input id="submit" type="submit" value="입력완료" />
-      </div>
+      </form>
       <div id="result">
-        <span id="txt"></span>
+        <span id="day"></span>
+        <span id="time"></span>
       </div>
     </div>
     <script src="js/app.js"></script>
