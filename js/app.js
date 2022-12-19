@@ -8,6 +8,12 @@ const resultAmountTime = document.getElementById("time");
 
 const DOGNAME_KEY = "dogname";
 
+function numberMaxLength(object) {
+  if (object.value.length > object.maxLength) {
+    object.value = object.value.slice(0, object.maxLength);
+  }
+}
+
 function onresultSubmit(event) {
   event.preventDefault();
   const dogname = nameInput.value;

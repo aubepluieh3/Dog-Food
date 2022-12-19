@@ -31,11 +31,12 @@
         <input
           id="kg"
           required
-          maxlength="4"
-          type="text"
+          maxlength="2"
+          type="number"
           min="2"
           max="40"
           placeholder="몸무게(2kg~40kg)"
+          oninput="numberMaxLength(this);"
         />
 
         <select name="age" id="age" onchange="ageBoxChange()">
